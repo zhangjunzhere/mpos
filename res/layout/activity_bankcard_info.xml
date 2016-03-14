@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="640dp"
+    android:layout_height="match_parent"
+    android:background="@color/second_backgroud"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center"
+    tools:context="com.itertk.app.mpos.login.ModifyPasswordActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back_image_selector" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡管理"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_normal_color"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/divide"
+        />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_below="@id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pwd_tip"
+            android:textSize="25sp"
+            android:text="您当前已绑定的银行卡:"/>
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bound_view"
+            android:padding="0dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/pwd_tip"
+            android:id="@+id/relativeLayout2"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:text="银行卡号:"
+                    android:textSize="25dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/text_normal_color"
+                    android:id="@+id/text_cardNo"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right|center"
+                    android:textSize="25dp"
+                    android:layout_marginRight="20dp"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="798px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divide"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="持卡人:"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/text_normal_color"
+                    android:id="@+id/text_cardOwner"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right|center"
+                    android:textSize="25dp"
+                    android:layout_marginRight="20dp"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="798px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divide"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneForgetImage"
+                    android:src="@drawable/password"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="银行机构:"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/text_normal_color"
+                    android:id="@+id/text_cardOrg"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right|center"
+                    android:textSize="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:textColor="@color/solid_white"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/my_blue_selector"
+        android:text="绑定新银行卡"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnOK"
+        android:layout_width="500dp"
+        android:layout_below="@id/content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/btnOK"/>
+</RelativeLayout>

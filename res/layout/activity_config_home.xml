@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
+    android:background="@color/main_backgroud"
+    android:gravity="center"
+    tools:context="com.itertk.app.mpos.config.ConfigHomeActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnProductConfig"
+        android:src="@drawable/product_config_selector"
+        android:background="@null"
+        android:layout_alignTop="@+id/btnUserConfig"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUserConfig"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:focusable="false"
+        android:src="@drawable/user_config_selector" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSystemConfig"
+        android:src="@drawable/system_config_selector"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品管理"
+        android:id="@+id/textView"
+        android:layout_marginBottom="65dp"
+        android:textSize="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/btnProductConfig"
+        android:layout_alignRight="@+id/btnProductConfig"
+        android:gravity="center"
+        android:textColor="@color/blue_cc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="店员管理"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignRight="@+id/btnUserConfig"
+        android:layout_alignLeft="@id/btnUserConfig"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="@color/blue_cc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统设置"
+        android:id="@+id/textView3"
+        android:layout_alignLeft="@id/btnSystemConfig"
+        android:layout_alignRight="@+id/btnSystemConfig"
+        android:layout_alignBottom="@+id/textView"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="@color/blue_cc" />
+
+</RelativeLayout>

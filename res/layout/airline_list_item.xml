@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:minHeight="180dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="600dp"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp">
+            
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/textDepartTime"
+                    android:textColor="@color/manu_input_color"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:text="08:00"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:textColor="@color/text_normal_color"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:text="|"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textArrivalTime"
+                    android:textColor="@color/hint_color"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:text="10:00"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" />
+                </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/textFromCity"
+                    android:textColor="@color/manu_input_color"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:text="虹桥机场T2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:textColor="@color/text_normal_color"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:text="|"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textToCity"
+                    android:textColor="@color/hint_color"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:text="首都机场T2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/textPrice"
+                    android:textColor="@color/orange"
+                    android:gravity="center|right"
+                    android:textSize="40sp"
+                    android:text="￥8881.0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/textCabin"
+                    android:textColor="@color/hint_color"
+                    android:gravity="center|right"
+                    android:textSize="25sp"
+                    android:text="经济舱 4.0折"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            
+            </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textAirlineInfo"
+                android:textSize="30sp"
+                android:gravity="center|left"
+                android:textColor="@color/manu_input_color"
+                android:text="东航MU1234 320（中）"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/textTicketInfo"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="@color/hint_color"
+                android:text=">9张"
+                android:layout_width="400dp"
+                android:layout_height="fill_parent" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:textSize="60sp" />
+</LinearLayout>

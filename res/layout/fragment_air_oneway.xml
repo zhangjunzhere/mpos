@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    tools:context="com.itertk.app.mpos.trade.convenience.AirOnewayFragment">
+
+
+    <LinearLayout
+        android:id="@+id/btnFromCity"
+        android:clickable="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_white"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/city" />
+
+        <TextView
+            android:id="@+id/textFromCity"
+            android:textColor="@color/text_normal_color"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="请选择出发城市"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=">"
+            android:textColor="@color/text_normal_color"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnToCity"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/city" />
+
+        <TextView
+            android:id="@+id/textToCity"
+            android:textColor="@color/text_normal_color"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="请选择到达城市"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=">"
+            android:textColor="@color/text_normal_color"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnDepartDate"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/date" />
+        <TextView
+            android:textColor="@color/hint_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="出发日期"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:id="@+id/textDepartDate"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=">"
+            android:textColor="@color/text_normal_color"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:textSize="30sp"
+        android:text="开始搜索"
+        android:textColor="@color/solid_white"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/btn_blue"
+        android:layout_width="650dp"
+        android:layout_height="100dp" />
+</LinearLayout>

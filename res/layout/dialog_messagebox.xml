@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="460dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_bg_edit"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+       >
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/success"
+                android:id="@+id/iv_icon"
+                />
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到失败!"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:layout_marginTop="5dp"
+                android:textSize="50sp"
+                android:textColor="@color/btn_blue" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到失败！ 签到失败签到失败签到失败签到失败签到失败签到失败签到失败"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:maxWidth="400dp"
+            android:layout_below="@+id/rl_title"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:textColor="@color/solid_black" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divide"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textColor="@color/solid_white"
+        android:textSize="40sp"
+        android:text="确    定"
+        android:id="@+id/btnOK"
+        android:background="@drawable/selector_btn_blue" />
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    tools:context="com.itertk.app.mpos.trade.convenience.TransferPayActivity">
+
+
+    <LinearLayout
+        android:padding="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/full_corner_area"
+        android:layout_width="750dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:text="转账汇款"
+            android:background="@drawable/top_corner"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" />
+
+
+        <LinearLayout
+            android:padding="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/full_corner_area"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/text_normal_color"
+                    android:text="收款人："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/textFullname"
+                    android:textSize="30sp"
+                    android:textColor="@color/text_normal_color"
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/divide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/text_normal_color"
+                    android:text="卡号："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/textCreditcardNo"
+                    android:textSize="30sp"
+                    android:textColor="@color/text_normal_color"
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/divide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/text_normal_color"
+                    android:text="转账金额："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/textMoney"
+                    android:textSize="30sp"
+                    android:textColor="@color/orange"
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/btn_blue"
+            android:textSize="30sp"
+            android:textColor="@color/solid_white"
+            android:text="支付"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@drawable/full_orage_area"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp">
+            <TextView
+                android:textSize="20sp"
+                android:text="汇款须知："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:text="1.请勿向陌生人转账，事先确认您与收款人的关系；\n2.请仔细核对收款人银行账号信息；\n3.因收款人信息错误导致交易失败，汇款金额原路退回或将退回到您的个人用户账户（扣除手续费）；\n4.转账汇款需收取手续费：转账金额x0.3%每笔，15元封顶，最低手续费3元每笔。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

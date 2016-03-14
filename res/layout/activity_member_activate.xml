@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/main_backgroud"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context="com.itertk.app.mpos.login.MemberActivateActivity">
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/full_corner_area"
+        android:padding="0dp"
+        android:id="@+id/relativeLayout2"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:gravity="center_horizontal|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="@color/text_normal_color"
+                android:layout_marginLeft="30dp"
+                android:gravity="left|center"
+                android:textSize="25sp"
+                android:layout_gravity="left"
+                android:background="@null"
+                android:text="您的手机号是："
+                android:singleLine="true" />
+
+            <TextView
+                android:text="123415"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="@color/blue_cc"
+                android:id="@+id/textPhone"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="798px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:gravity="center_horizontal|left">
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkCodeImage"
+                android:src="@drawable/id_card"
+                android:gravity="center"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:textColor="@color/text_normal_color"
+                android:id="@+id/textCheckCode"
+                android:layout_marginLeft="30dip"
+                android:textSize="25dp"
+                android:gravity="left|center"
+                android:layout_gravity="center"
+                android:password="false"
+                android:hint="请输入验证码"
+                android:background="@null"
+                android:textColorHint="@color/hint_color"
+                android:singleLine="true"
+                android:inputType="number" />
+            <Button
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:text="获取验证码"
+            android:id="@+id/btnGetCheckCode"
+            android:textColor="@color/text_normal_color"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:background="@drawable/my_white_selector" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="激活"
+        android:textSize="30dp"
+        android:id="@+id/btnActivate"
+        android:layout_marginTop="75px"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:background="@drawable/my_blue_selector"
+        android:textColor="#ffffffff" />
+</RelativeLayout>

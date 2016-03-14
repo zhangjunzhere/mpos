@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".trade.pos.SaleCatalogListFragment">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/checkout_left_navi"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="商品条码"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="商品名称"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="数量"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="零售价"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="总计"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        >
+
+        <com.itertk.app.mpos.SlideDeleteListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listData"
+            android:layout_above="@+id/inputsnlayout"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:divider="@drawable/divide"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            ></com.itertk.app.mpos.SlideDeleteListView>
+
+
+    </RelativeLayout>
+</LinearLayout>

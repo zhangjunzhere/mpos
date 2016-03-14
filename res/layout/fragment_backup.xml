@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".config.BackupFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100sp"
+            android:text="旺铺宝"
+            android:textColor="@color/manu_input_color"
+            android:layout_marginBottom="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次备份时间：2014-07-07 11：11"
+            android:textSize="30sp"
+            android:textColor="@color/bar_normal_color"
+            android:layout_marginBottom="40dp" />
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_save_selector"
+            android:gravity="center"
+            android:id="@+id/btnSave"
+            android:clickable="true">
+
+            <ImageView
+                android:duplicateParentState="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_save_image_selector"
+                android:id="@+id/imgSaveAs"
+                android:layout_alignParentLeft="true"
+
+                />
+
+            <TextView
+                android:duplicateParentState="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导出数据备份"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textColor="@drawable/back_save_text_selector"
+                android:layout_alignBottom="@+id/imgSaveAs"
+                android:layout_toRightOf="@+id/imgSaveAs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_save_selector"
+            android:gravity="center"
+            android:id="@+id/btnLoad"
+            android:layout_marginTop="20dp"
+            android:clickable="true">
+
+            <ImageView
+                android:duplicateParentState="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_load_image_selector"
+                android:id="@+id/imgLoad"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:duplicateParentState="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导入备份数据"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textColor="@drawable/back_save_text_selector"
+                android:layout_alignBottom="@+id/imgLoad"
+                android:layout_toRightOf="@+id/imgLoad" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

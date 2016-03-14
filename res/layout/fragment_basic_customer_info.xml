@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="学历"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnZhuanKe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="专科"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnBenKe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="本科及以上"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnXueLiQiTa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="其他"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="住房性质"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:columnCount="3"
+                android:rowCount="2" >
+
+                <Button
+                    android:id="@+id/btnZuFang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="租房"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnBenDiGouFang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="本地购置住房"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnJiTiSuShe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="集体宿舍"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnFuMu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="父母"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnQinQiJia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="亲属家"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnZhuFangXingZhiQiTa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="其他"
+                    android:textSize="22sp" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="信用卡信息"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnWuXinYongKa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="无信用卡"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnYouQiTaXinYongKa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="有其它信用卡"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnYouBenHangXinYongKa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="有本行信用卡"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="工作信息"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:columnCount="3"
+                android:rowCount="3" >
+
+                <Button
+                    android:id="@+id/btnBaiLingShangBanZu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="白领上班族"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnGongWuYuanShiYeDanWei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="公务员事业单位"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnFangDiChanJingJi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="房地产经纪"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnMeiRongMeiFa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="美容美发"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnXiaoXinCanYin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="小型餐饮"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnBaoAnBaoJie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="保安保洁"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btnGongZuoXinXiQiTa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/selector_btn_apply_credit_info"
+                    android:text="其他"
+                    android:textSize="22sp" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnBasicCustomerNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_btn_next_cardinfo_dialog"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

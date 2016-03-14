@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical|left"
+    android:layout_width="fill_parent"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:layout_height="75dp">
+
+    <TextView
+        android:id="@+id/txtvwSpinner"
+        android:textSize="30sp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/text_normal_color"
+        android:text="添加优惠"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

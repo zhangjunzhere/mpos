@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/full_min_corner"
+    android:padding="0dp"
+    tools:context="com.itertk.app.mpos.trade.convenience.DepartDateFragment">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/divide_vertical" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_normal_color"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/divide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp">
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/pre_2"
+            android:id="@+id/btnPre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textMonth"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="30sp"
+            android:text="2014年10月"
+            android:textColor="@color/text_normal_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/next"
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <ImageView
+        android:src="@drawable/divide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/blue_cc"
+            android:textSize="20sp"
+            android:text="周日"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp"
+            android:text="周一"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp"
+            android:text="周二"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp"
+            android:text="周三"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/text_normal_color"
+        android:textSize="20sp"
+        android:text="周四"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp"
+            android:text="周五"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/blue_cc"
+            android:textSize="20sp"
+            android:text="周六"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    <GridView
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="10dp"
+        android:choiceMode="singleChoice"
+        android:numColumns="7"
+        android:id="@+id/gridDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        </GridView>
+</LinearLayout>

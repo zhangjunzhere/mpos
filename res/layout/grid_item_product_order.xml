@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:orientation="vertical"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:background="@drawable/full_min_corner">
+
+
+
+    <ImageView
+        android:id="@+id/iv_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="210dip"
+        android:src = "@drawable/order_item"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="centerCrop"
+        android:layout_gravity="right|center_vertical" />
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:textSize="25sp"
+        android:textColor="@color/solid_red"
+        android:text="@string/product_price"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_product_price"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxWidth="210dp"
+        android:layout_marginBottom="5dp"
+        android:text="海天酱油"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>

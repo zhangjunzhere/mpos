@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".config.UserCenterFragment">
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/full_corner_area"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:text="会员信息"
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/divide" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="账号："
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical"
+                        android:text="12345678901"
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/divide" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="姓名："
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical"
+                        android:text="安卓"
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/divide" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="银行卡："
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical"
+                        android:text="66279394359435"
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnAuth"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="认证管理"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:text=">"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="35sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnBankcard"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="银行卡管理"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:text=">"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="35sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnSecurity"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="安全管理"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:text=">"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="35sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_red"
+                android:text="退出登录"
+                android:textColor="@color/solid_white"
+                android:textSize="30sp"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

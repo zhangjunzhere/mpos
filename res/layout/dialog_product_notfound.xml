@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/full_min_corner"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/second_backgroud"
+        android:id="@+id/titlelayout"
+        >
+
+        <Button
+            android:id="@+id/dialogback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_image_selector" />
+
+        <ImageView
+            android:src="@drawable/divide_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="商品没有找到，请添加商品"
+            android:textColor="@color/text_normal_color"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlelayout"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:textSize="30dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/checkout_right_item"
+            android:paddingLeft="10dp"
+            android:id="@+id/barcode" android:text="barcode here"/>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:id="@+id/name"
+            android:layout_below="@id/barcode"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:textSize="30dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@drawable/checkout_search_input"
+            android:layout_height="wrap_content"
+            android:hint="商品名称未知"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:hint="请输入价格"
+            android:inputType="numberDecimal"
+            android:gravity="left|center_vertical"
+            android:textSize="30dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/checkout_search_input"
+            android:layout_below="@id/name"
+            android:id="@+id/price"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="确  定"
+            android:textColor="@color/solid_white"
+            android:textSize="30dp"
+            android:background="@drawable/btn_blue"
+            android:id="@+id/ok"
+            />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

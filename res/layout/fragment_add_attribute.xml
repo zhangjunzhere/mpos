@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_corner_area">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_margin="15px"
+        android:background="@drawable/btn_blue"
+        android:text="新增属性"
+        android:textColor="@color/solid_white"
+        android:textSize="35sp"
+        android:id="@+id/btnSave" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnSave"
+        android:layout_margin="15px"
+        android:hint="请输入商品属性"
+        android:textSize="30dp"
+        android:id="@+id/textAttributeName"
+        android:background="@drawable/edit" />
+
+    <LinearLayout
+        android:background="@drawable/btn_white"
+        android:layout_width="fill_parent"
+        android:layout_margin="15px"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:id="@+id/btnAddAttributeValue"
+        android:layout_below="@id/textAttributeName">
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/tianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:text="添加该属性种类"
+            android:textSize="30dp"
+            android:textColor="@color/text_normal_color"
+            android:gravity="center"
+            android:background="@null" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_margin="15px"
+        android:padding="0dp"
+        android:layout_below="@+id/btnAddAttributeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listAttrValue"
+        android:background="@drawable/full_corner_area"></ListView>
+</RelativeLayout>

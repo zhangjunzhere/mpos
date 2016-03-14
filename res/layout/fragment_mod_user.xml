@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_corner_area"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".config.ModUserFragment">
+
+
+    <EditText
+        android:singleLine="true"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/text_normal_color"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入手机号"
+        android:textSize="30sp"
+        android:background="@drawable/bound_view"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="number"
+        android:id="@+id/textUserPhone" />
+
+    <EditText
+        android:id="@+id/textFullname"
+        android:singleLine="true"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/text_normal_color"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入用户名"
+        android:textSize="30sp"
+        android:layout_below="@id/textUserPhone"
+        android:background="@drawable/bound_view"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <EditText
+        android:singleLine="true"
+        android:password="true"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/text_normal_color"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入原始密码"
+        android:textSize="30sp"
+        android:layout_below="@+id/textFullname"
+        android:background="@drawable/edit"
+        android:visibility="gone"
+        android:id="@+id/textOriginalPassword" />
+
+    <EditText
+        android:singleLine="true"
+        android:password="true"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/text_normal_color"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入新密码"
+        android:textSize="30sp"
+        android:layout_below="@+id/textOriginalPassword"
+        android:background="@drawable/bound_view"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/textPassword" />
+
+    <EditText
+        android:singleLine="true"
+        android:password="true"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/text_normal_color"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/textPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="请确认新密码"
+        android:textSize="30sp"
+        android:id="@+id/textPasswordConfirm"
+        android:background="@drawable/bound_view"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_margin="15px"
+        android:id="@+id/user_type"
+        android:layout_below="@id/textPasswordConfirm">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/employer_config_selector"
+            android:text="店长"
+            android:textSize="30dp"
+            android:id="@+id/btnEmployer"
+            android:textColor="@drawable/shop_config_text_selector" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/employee_config_selector"
+            android:text="店员"
+            android:id="@+id/btnEmployee"
+            android:textSize="30dp"
+            android:textColor="@drawable/shop_config_text_selector" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_blue"
+        android:text="保存用户"
+        android:textStyle="bold"
+        android:textColor="#fff3f3f3"
+        android:textSize="35dp"
+        android:layout_below="@id/user_type"
+        android:id="@+id/btnSave" />
+
+</RelativeLayout>

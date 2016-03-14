@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/full_min_corner"
+    tools:context="com.itertk.app.mpos.trade.convenience.AirCityFragment">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:src="@drawable/divide_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="出发城市"
+            android:textColor="@color/text_normal_color"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/divide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/textPY"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp"
+            android:background="@null"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入城市简拼"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textCapCharacters" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/divide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listCity"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:paddingRight="40dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:background="@drawable/btn_green"
+            android:id="@+id/textLetter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+
+        <com.itertk.app.mpos.trade.convenience.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+
+</LinearLayout>

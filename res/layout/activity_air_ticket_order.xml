@@ -1,0 +1,398 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.itertk.app.mpos.trade.convenience.AirTicketOrderActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="750dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/full_corner_area"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/top_corner"
+            android:gravity="center"
+            android:text="机票详情"
+            android:textColor="@color/text_normal_color"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/full_min_corner"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical"
+                    android:text="2014-09-09"
+                    android:id="@+id/textDepartDate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:paddingRight="20dp"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical|right"
+                    android:text="上海——北京"
+                    android:id="@+id/textCityLabel"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/divide" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:id="@+id/textDepartTime"
+                        android:textSize="50sp"
+                        android:text="08:09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/textFromCity"
+                        android:textSize="30sp"
+                        android:text="上海"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="70sp"
+                    android:text="——"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"></TextView>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:id="@+id/textArrivalTime"
+                        android:textSize="50sp"
+                        android:text="18:09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/textToCity"
+                        android:textSize="30sp"
+                        android:text="北京"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/divide" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical"
+                    android:text="MU 8888| 经济舱"
+                    android:id="@+id/textLineInfo"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:paddingRight="20dp"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical|right"
+                    android:text="机票价：￥766.00"
+                    android:id="@+id/textTicketPrice"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/divide" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical"
+                    android:text="基建/燃油费：￥50.00/￥150.00"
+                    android:id="@+id/textAirFee"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:paddingRight="20dp"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical|right"
+                    android:text="总价：￥777.00"
+                    android:id="@+id/textTotalPrice"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="135dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/full_orage_area"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="飞机票退改签规则："
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.MPOS的机票订购、退改签办理时间为9:00至20:30，热线号码:400-078-0571；
+\n2.支持国内各地机票订购，能查询到的航班均可预定；
+\n3.订票成功后，请凭借证件原件，至少提前飞机起飞两小时至机场换取登机牌登机；
+\n4.如有退票改签需求及其他需求，请至少提前两小时联系客服电话400-078-0571；
+\n5.如需报销，乘客需在机场自行打印电子行程单。"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemArea"
+        android:layout_width="450dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/layoutMain"
+        android:background="@drawable/full_min_corner"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/top_corner"
+            android:gravity="center"
+            android:text="预订信息"
+            android:textColor="@color/text_normal_color"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/full_min_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/gridPassenger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:columnWidth="20dp"
+                android:numColumns="2">
+                <TextView
+                    android:id="@+id/textPassengerDescription"
+                    android:textColor="@color/text_normal_color"
+                    android:layout_marginLeft="10dp"
+                    android:text="乘客"
+                    android:textSize="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnAddPassenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:src="@drawable/add_2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/full_min_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/gridContractor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:columnWidth="20dp"
+                android:numColumns="2">
+                <TextView
+                    android:id="@+id/textContractorDescription"
+                    android:textColor="@color/text_normal_color"
+                    android:layout_marginLeft="10dp"
+                    android:text="联系人"
+                    android:textSize="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnAddContractor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:src="@drawable/add_2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBaoxiao"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/full_min_corner"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/btnBaoxiao"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/baoxiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="是否需要报销凭证"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=">"
+                    android:textColor="@color/manu_input_color"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgDivide"
+                android:src="@drawable/divide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/textAddress"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:hint="请输入配送地址"
+                android:textSize="30sp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_blue"
+            android:text="提交订单"
+            android:textColor="@color/solid_white"
+            android:textSize="30sp" />
+    </LinearLayout>
+</RelativeLayout>

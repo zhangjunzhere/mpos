@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:minHeight="100dp">
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textCabin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="经济舱 4.0折"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="￥8881.0"
+            android:textColor="@color/orange"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textTicketInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center|top"
+        android:text=">9张"
+        android:textColor="@color/text_normal_color"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text=">"
+        android:textSize="50sp" />
+</LinearLayout>

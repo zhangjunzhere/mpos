@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="16dp"
+          android:layout_marginLeft="40dp"
+          android:layout_marginRight="40dp"
+       >
+          <ImageView
+            android:id="@+id/btn_select_child"
+            android:src="@drawable/btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:src="@drawable/item_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_toRightOf="@id/btn_select_child"
+            android:layout_marginLeft="8dp"
+            />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/iv_product"
+                android:layout_marginLeft="8dp">
+                <TextView
+                    android:id="@+id/tv_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxWidth="230dp"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:text="秋冬加绒加厚拉链卫衣"
+                    android:textColor="@color/dialog_content_normal"
+                  />
+                <TextView
+                    android:id="@+id/tv_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="158.00"
+                    android:textSize="25sp"
+                    android:textColor="@color/dialog_content_normal"/>
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/panel_money"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="158.00"
+                    android:textSize="25sp"
+                    android:textColor="@color/dialog_content_normal"/>
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="x1"
+                    android:textSize="25sp"
+                    android:textColor="@color/dialog_content_normal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/panel_edit"
+                android:layout_toLeftOf="@id/panel_money"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <ImageButton
+                    android:id="@+id/btn_cut"
+                    android:background="@drawable/selector_btn_cut_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+
+                <EditText
+                    android:id="@+id/et_quantity"
+                    android:digits="1234567890"
+                    android:maxLength="4"
+                    android:layout_width="80dp"
+                    android:layout_height="47dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/edit"
+                    android:text="3"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/dialog_content_normal"
+                     />
+
+                <ImageButton
+                    android:id="@+id/btn_add"
+                    android:background="@drawable/selector_btn_add_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/btn_delete_item"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View  android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_gray" />
+
+</LinearLayout>

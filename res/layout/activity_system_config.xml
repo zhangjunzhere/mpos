@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.itertk.app.mpos.config.SystemConfigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="@drawable/shop_config_selector"-->
+            <!--android:id="@+id/btnShop"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:clickable="true">-->
+            <!--<ImageView-->
+            <!--android:duplicateParentState="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/shop_config_image_selector"-->
+            <!--android:id="@+id/imageShop"/>-->
+            <!--<TextView-->
+            <!--android:duplicateParentState="true"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="30sp"-->
+            <!--android:id="@+id/textShop"-->
+            <!--android:textColor="@drawable/shop_config_text_selector"-->
+            <!--android:text="商户信息"/>-->
+
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shop_config_selector"
+                android:id="@+id/btnUserCenter"
+                android:gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:duplicateParentState="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/usercenter_config_image_selector"
+                    android:id="@+id/imageShop" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:id="@+id/textShop"
+                    android:textColor="@drawable/shop_config_text_selector"
+                    android:text="会员中心" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shop_config_selector"
+                android:id="@+id/btnDevice"
+                android:gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:duplicateParentState="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/device_config_image_selector" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@drawable/shop_config_text_selector"
+                    android:text="设备参数" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="-1dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/update_config_selector"
+                android:id="@+id/btnUpdate"
+                android:gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:duplicateParentState="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/update_config_image_selector"
+                    android:id="@+id/imageUpdate" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:id="@+id/textJCGX"
+                    android:textColor="@drawable/shop_config_text_selector"
+                    android:text="系统更新" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="-1dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/update_config_selector"
+                android:id="@+id/btnBackup"
+                android:gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:duplicateParentState="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/backup_config_image_selector"
+                    android:id="@+id/imageBackup" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:id="@+id/textBackup"
+                    android:textColor="@drawable/shop_config_text_selector"
+                    android:text="系统备份" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="-1dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/update_config_selector"
+                android:id="@+id/btnTechnicalSupport"
+                android:gravity="center_vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:duplicateParentState="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/technical_support_image_selector"
+                    android:id="@+id/imageTechnicalSupport" />
+
+                <TextView
+                    android:duplicateParentState="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:id="@+id/textTechnicalSupport"
+                    android:textColor="@drawable/shop_config_text_selector"
+                    android:text="技术支持" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="-1dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/set_bottom"
+                android:gravity="center_vertical"
+                android:clickable="true"></RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="-1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/set_container"
+            android:background="@drawable/right_corner_eara"></RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

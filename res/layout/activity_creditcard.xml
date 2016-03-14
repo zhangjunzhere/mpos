@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/main_backgroud"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.itertk.app.mpos.trade.convenience.CreditcardActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:padding="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/full_corner_area"
+        android:layout_width="750dp"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:text="信用卡还款"
+            android:background="@drawable/top_corner"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" />
+
+        <EditText
+            android:maxLength="20"
+            android:singleLine="true"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp"
+            android:textColor="@color/text_normal_color"
+            android:id="@+id/textCreditcardNo"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="15dp"
+            android:hint="请输入需还款的信用卡卡号"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:maxLength="20"
+            android:singleLine="true"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp"
+            android:textColor="@color/text_normal_color"
+            android:id="@+id/textCreditcardNoConfirm"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="15dp"
+            android:hint="请确认需还款的信用卡卡号"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:singleLine="true"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp"
+            android:textColor="@color/text_normal_color"
+            android:id="@+id/textMoney"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="15dp"
+            android:hint="请输入需还款金额"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:inputType="number" />
+
+        <EditText
+            android:maxLength="20"
+            android:singleLine="true"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp"
+            android:textColor="@color/text_normal_color"
+            android:id="@+id/textPhone"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="15dp"
+            android:hint="请输入信用卡持有人手机号码"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:checked="true"
+                android:textSize="25sp"
+                android:text="我已经阅读并同意《"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_normal_color"
+                android:id="@+id/checkArgree"
+                android:button="@drawable/remember_password"
+                android:paddingLeft="20dp"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/btnRule"
+                android:textSize="25sp"
+                android:textColor="@color/blue_cc"
+                android:background="@null"
+                android:text="信用卡还款规则"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/text_normal_color"
+                android:textSize="25sp"
+                android:text="》"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textSize="40sp"
+            android:textColor="@color/solid_white"
+            android:text="下一步"
+            android:background="@drawable/btn_blue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="1dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/full_min_corner"
+        android:id="@+id/itemArea"
+        android:layout_width="450dp"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/layoutMain"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back" />
+
+            <ImageView
+                android:src="@drawable/divide_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="信用卡还款规则"
+                android:textColor="@color/text_normal_color"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/divide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="19sp"
+            android:text="一、可使用所有银联标识的借记卡（即储蓄卡）为信用卡还款。（信用卡不可以还信用卡）
+\n二、目前支持以下银行的信用卡还款，按额度回复时效划分：
+    \n1、实时恢复额度：\n平安银行、民生银行、招商银行、兴业银行、中信银行、光大银行、广发银行、宁波银行、上海银行、上海农商行、哈尔滨银行、大连银行、重庆银行、宁夏银行、盛京银行、东亚银行、广东南粤银行（原湛江商行）、温州银行、徽商银行、包商银行、台州银行、浙江泰隆银行、青岛银行、乌鲁木齐银行、重庆农商行、渣打银行、成都农商行、广州银行、绍兴银行、青海银行和青海农信社。
+	\n2、三个工作日内恢复额度：\n农业银行、建设银行、华夏银行、工商银行、中国银行、浦发银行、南京银行、江苏银行、长沙银行和花旗银行。
+\n三、手续费\n农业银行、建设银行、工商银行信用卡还款业务每笔收取手续费2元，其他银行免费。农业银行、建设银行、工商银行三个工作日内恢复额度。
+"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

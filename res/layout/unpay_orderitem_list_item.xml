@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minHeight="100px"
+    android:layout_height="100px"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_height="85dp"
+        android:layout_width="80dp"
+        android:id="@+id/ItemImage"
+        android:src="@drawable/manual"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="23dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:minWidth="50px"></ImageView>
+
+    <TextView
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手动"
+        android:textSize="25dp"
+        android:textColor="@color/text_normal_color"
+        android:id="@+id/ItemText"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ItemImage"
+        android:layout_marginTop="15px"></TextView>
+
+    <TextView
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_width="30px"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:gravity="center"
+        android:background="@color/bar_normal_color"
+        android:textSize="25dp"
+        android:textColor="@color/solid_white"
+        android:id="@+id/itemCount"
+        android:layout_below="@id/ItemText"
+        android:layout_marginTop="10px"
+        android:layout_alignLeft="@id/ItemText"></TextView>
+
+    <TextView
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.00"
+        android:textSize="25dp"
+        android:textColor="@color/text_normal_color"
+        android:id="@+id/itemPrice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_alignParentBottom="true"></TextView>
+</RelativeLayout>

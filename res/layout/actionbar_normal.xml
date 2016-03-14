@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/itemBack"
+        android:layout_marginLeft="20dp"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/back_cash"
+            android:id="@+id/back_tile" />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:paddingLeft="10px"
+            android:text="返回"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/back_tile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:id="@+id/itemSet"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="10px"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/set"
+            android:id="@+id/setImage"
+            android:paddingLeft="10px" />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:text="设置中心"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/textSet"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/setImage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/itemSet"
+        android:id="@+id/itemAccount"
+        android:layout_marginRight="20px"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/line"
+            android:id="@+id/lineAccount"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/myhead"
+            android:id="@+id/accountImage"
+            android:layout_toRightOf="@id/lineAccount"
+            android:paddingLeft="20px" />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:paddingLeft="10px"
+
+            android:text="我的账户"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/textAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/accountImage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/itemAccount"
+        android:id="@+id/itemPos"
+        android:layout_marginRight="20px"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/line"
+            android:id="@+id/linePos" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/possign"
+            android:id="@+id/posImage"
+            android:layout_toRightOf="@id/linePos"
+            android:paddingLeft="20px" />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:paddingLeft="10px"
+
+            android:text="POS签到"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/textPos"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/posImage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/itemPos"
+        android:id="@+id/itemHome"
+        android:layout_marginRight="10px"
+        android:clickable="true"
+        android:paddingLeft="10px"
+        android:paddingRight="10px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/home"
+            android:id="@+id/homeImage"
+            android:layout_alignParentLeft="true"
+
+            />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:paddingLeft="10px"
+            android:text="首页"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/textHome"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/homeImage" />
+    </RelativeLayout>
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/itemSet"
+        android:src="@drawable/line"
+        android:id="@+id/lineSet" />
+</RelativeLayout>

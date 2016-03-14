@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/term_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bound_view"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/id_card"
+                android:text="POS序列号:"
+                android:textSize="25dp"
+                android:gravity="right"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="fill_parent"
+                android:textColor="@color/text_normal_color"
+                android:id="@+id/textposID"
+                android:layout_marginLeft="8dp"
+                android:textSize="25dp"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="798dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/id_card"
+                android:text="终端号:"
+                android:textSize="25dp"
+                android:gravity="right"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="fill_parent"
+                android:textColor="@color/text_normal_color"
+                android:id="@+id/texttermID"
+                android:layout_marginLeft="8dp"
+                android:textSize="25sp"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="798dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/id_card"
+                android:text="终端MAC:"
+                android:textSize="25dp"
+                android:gravity="right"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="fill_parent"
+                android:textColor="@color/text_normal_color"
+                android:id="@+id/texttermMAC"
+                android:layout_marginLeft="8dp"
+                android:textSize="25sp"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="number" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="#ffffffff"
+        android:id="@+id/btnNext"
+        android:layout_alignLeft="@id/term_info"
+        android:layout_alignRight="@id/term_info"
+        android:layout_below="@id/term_info"
+
+        android:background="@drawable/my_blue_selector" />
+
+</RelativeLayout>

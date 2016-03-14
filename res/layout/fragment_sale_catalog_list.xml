@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".trade.pos.SaleCatalogListFragment">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/list_header_backgroud"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="商品条码"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="商品名称"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="数量"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="零售价"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="总计"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+       android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/listData"
+            android:layout_above="@+id/inputsnlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+        <RelativeLayout
+            android:id="@+id/inputsnlayout"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/inputsn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/text_normal_color"
+                android:gravity="left|center"
+                android:background="@drawable/edit"
+                android:textSize="30dp"
+                android:hint="请录入商品条码/商品名称"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+             />
+            <Button
+                android:id="@+id/btnproductsearch"
+                android:layout_alignParentRight="true"
+                android:textSize="30dp"
+                style="@style/searchbutton"
+                android:layout_centerVertical="true"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+
+                android:layout_marginRight="10dp"
+                />
+         </RelativeLayout>
+
+        </RelativeLayout>
+</LinearLayout>

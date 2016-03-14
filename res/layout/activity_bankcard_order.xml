@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.itertk.app.mpos.trade.pos.BankcardOrderActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutSign"
+            android:layout_width="wrap_content"
+            android:layout_height="521dp"
+            android:background="@drawable/sign_paper">
+
+            <TextView
+                android:singleLine="true"
+                android:text="4123"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/blue_cc"
+                android:textSize="25sp"
+                android:id="@+id/textShopno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:singleLine="true"
+                android:text="213423"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/blue_cc"
+                android:textSize="25sp"
+                android:layout_below="@+id/textShopno"
+                android:id="@+id/textTermNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:singleLine="true"
+                android:text="1123423412"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textTermNo"
+                android:textColor="@color/blue_cc"
+                android:textSize="25sp"
+                android:id="@+id/textOrderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:singleLine="true"
+                android:text="12345678901234567890"
+                android:layout_below="@+id/textOrderNo"
+                android:layout_alignLeft="@+id/textOrderNo"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/blue_cc"
+                android:textSize="25sp"
+                android:id="@+id/textBankcardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:singleLine="true"
+                android:text="2014/08/08 12:14"
+                android:layout_below="@+id/textBankcardNo"
+                android:layout_alignLeft="@+id/textBankcardNo"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/blue_cc"
+                android:textSize="25sp"
+                android:id="@+id/textDate"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:singleLine="true"
+                android:text="1000.00元"
+                android:layout_below="@+id/textDate"
+                android:layout_alignLeft="@+id/textDate"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/blue_cc"
+                android:textSize="25sp"
+                android:id="@+id/textMoney"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/textMoney"
+                android:layout_alignLeft="@+id/textMoney"
+                android:id="@+id/imageSign"
+                android:layout_width="200dp"
+                android:layout_height="80dp" />
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_btn_blue"
+            android:text="确 认"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/solid_white"
+            android:textSize="35dp" />
+    </LinearLayout>
+
+</RelativeLayout>

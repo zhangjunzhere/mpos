@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="640dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    tools:context="com.itertk.app.mpos.trade.pos.PayActivity">
+    <EditText
+        android:id="@+id/textInputGun"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/second_backgroud"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+            android:id="@+id/dialogback"
+            android:src="@drawable/btn_back_image_selector"
+            android:layout_marginLeft="20dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/totalPrice"
+                android:singleLine="true"
+                android:layout_height="fill_parent"
+                android:textColor="@color/text_normal_color"
+                android:textSize="40dp"
+                android:layout_margin="20dp"
+                android:layout_centerInParent="true"
+                android:gravity="center" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divide" />
+
+        <RelativeLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/sctitle"
+                android:text="扫描到的二维码是"
+                android:textSize="30dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/sctitle"
+                android:id="@+id/scanCode"
+                android:background="@drawable/manual_checkout_input"
+                android:text=""
+                android:inputType="phone"
+                android:gravity="center"
+                android:textSize="40dp"
+                />
+            </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/solid_white"
+                android:textSize="50dp"
+                android:layout_margin="5dp"
+                android:id="@+id/btnCheckout"
+
+                android:background="@drawable/checkout_btn_selector" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

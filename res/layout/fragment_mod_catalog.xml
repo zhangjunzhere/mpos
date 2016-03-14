@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_corner_area">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_margin="15px"
+        android:background="@drawable/btn_blue"
+        android:text="保存分类"
+        android:textStyle="bold"
+        android:textColor="#fff3f3f3"
+        android:textSize="35dp"
+        android:id="@+id/btnSave" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnSave"
+        android:layout_margin="15px"
+        android:hint="请输入分类名称"
+        android:textSize="30dp"
+        android:id="@+id/textCatalogName"
+        android:background="@drawable/edit" />
+</RelativeLayout>

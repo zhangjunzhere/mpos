@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/full_corner_area"
+    tools:context=".config.ModBankcardFragment">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_margin="15px"
+        android:background="@drawable/btn_blue"
+        android:text="修改绑定"
+        android:textStyle="bold"
+        android:textColor="#fff3f3f3"
+        android:textSize="30dp"
+        android:id="@+id/btnSave" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:layout_margin="15px"
+        android:id="@+id/cardBank"
+        android:layout_below="@id/btnSave"
+        android:background="@drawable/btn_white" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:layout_margin="15px"
+        android:layout_below="@+id/cardBank"
+        android:background="@drawable/btn_white"
+        android:id="@+id/cardBankSub" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:layout_below="@id/cardBankSub"
+        android:layout_margin="15px"
+        android:hint="请输入银行卡卡号"
+        android:textSize="30dp"
+        android:id="@+id/cardNo"
+        android:background="@drawable/edit" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:layout_below="@id/cardNo"
+        android:id="@+id/cardNo2"
+        android:layout_margin="15px"
+        android:hint="请确认银行卡卡号"
+        android:textSize="30dp"
+        android:background="@drawable/edit" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:layout_below="@id/cardNo2"
+        android:id="@+id/userName"
+        android:layout_margin="15px"
+        android:hint="持卡人姓名"
+        android:textSize="30dp"
+        android:background="@drawable/edit" />
+
+</RelativeLayout>

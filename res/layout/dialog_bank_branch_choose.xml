@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="640dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/full_min_corner"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:src="@drawable/divide_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="分（支）行列表"
+            android:textColor="@color/text_normal_color"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/divide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:divider="@drawable/divide"
+        android:id="@+id/listBankBranch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/text_no_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:text="未找到相关支行,请手动输入开户行信息"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="50dp"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

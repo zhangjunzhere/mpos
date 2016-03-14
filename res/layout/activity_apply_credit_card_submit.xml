@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="1050dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/submit_info_bankground"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/textSelectedBankCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:text="您已预约了0家银行  :"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <GridView
+                android:id="@+id/gridviewSelectedBank"
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:columnWidth="10dp"
+                android:horizontalSpacing="20dp"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="30dp"
+                android:visibility="visible" >
+            </GridView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1.0"
+            android:columnCount="2"
+            android:rowCount="3" >
+
+            <EditText
+                android:id="@+id/etIdentificationCardNo"
+                android:layout_width="475dp"               
+                android:layout_height="wrap_content"
+                android:background="@drawable/apply_credit_input"
+                android:hint="请输入身份证号"
+                android:paddingLeft="22dp"
+                android:singleLine="true"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/etWorkPlaceAddress"
+                android:layout_width="475dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/apply_credit_input"
+                android:hint="请输入单位详细地址"
+                android:paddingLeft="22dp"
+                android:singleLine="true"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="475dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/apply_credit_input"
+                android:hint="请输入姓名"
+                android:paddingLeft="22dp"
+                android:singleLine="true"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/etMobileNo"
+                android:layout_width="475dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/apply_credit_input"
+                android:hint="请输入手机号"
+                android:maxLength="11"
+                android:numeric="integer"
+                android:paddingLeft="22dp"
+                android:singleLine="true"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/btnChoiceArea"
+                android:layout_width="475dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/select_area_bankground"
+                android:onClick="onBtnChoiceArea"
+                android:paddingLeft="22dp"
+                android:text="请选择区县"
+                android:textSize="26sp" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxIsAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/remember_password"
+            android:paddingLeft="10dp"
+            android:text="我已经阅读并同意《"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textViewUserAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickUserAgreement"
+            android:text="用户使用协议"
+            android:textColor="@color/blue_cc"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="》"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_btn_appointment_conmit"
+        android:gravity="center"
+        android:onClick="onSubmit"
+        android:text="提    交"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>

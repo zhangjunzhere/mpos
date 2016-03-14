@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".trade.pos.SaleProductListFragment">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/list_header_backgroud"
+        android:orientation="horizontal"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="&lt;"
+            android:textSize="60sp"
+            android:textColor="@color/text_normal_color"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_gray"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/btnAdd"
+            android:textColor="@color/text_normal_color"
+            android:text="商品分类"
+            android:id="@+id/textCatalogName"
+            android:textSize="30sp"
+            android:layout_width="457dp"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listData"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+
+</LinearLayout>

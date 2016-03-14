@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.itertk.app.mpos.login.TerminalActivateActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:background="@drawable/full_corner_area">
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp"
+            android:text="终端序列号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/text_normal_color"
+            android:id="@+id/textTerminal"
+            android:layout_marginLeft="13dp"
+            android:gravity="left|center"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColorHint="@color/hint_color"
+            android:background="@null"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/full_corner_area">
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp"
+            android:text="POS序列号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/text_normal_color"
+            android:id="@+id/textPOS"
+            android:layout_marginLeft="13dp"
+            android:gravity="left|center"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColorHint="@color/hint_color"
+            android:hint="请输入POS序列号"
+            android:background="@null"
+            android:inputType="number"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="700dp"
+        android:layout_height="88dp"
+        android:text="激活设备"
+        android:id="@+id/btnActivate"
+        android:textSize="30sp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/my_blue_selector" />
+
+</LinearLayout>

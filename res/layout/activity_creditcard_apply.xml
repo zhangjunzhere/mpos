@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.itertk.app.mpos.trade.convenience.CreditcardApplyActivity">
+
+
+    <RelativeLayout
+        android:paddingTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/full_corner_area">
+
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/gsyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工商银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnNY"
+            android:layout_toRightOf="@+id/btnGS"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/nyyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="农业银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnJS"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/btnNY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/jsyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建设银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnZG"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/btnJS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/zgyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnJT"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/btnZG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/jtyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交通银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnZS"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/btnJT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/zsyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="招商银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnGF"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/btnZS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/gfyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广发银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnGD"
+            android:layout_below="@+id/btnGS"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/gdyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光大银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnZX"
+            android:layout_alignLeft="@+id/btnNY"
+            android:layout_below="@+id/btnGS"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/zxyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中信银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnXY"
+            android:layout_alignLeft="@+id/btnJS"
+            android:layout_below="@+id/btnGS"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/xyyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兴业银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/btnMS"
+            android:layout_alignLeft="@+id/btnZG"
+            android:layout_below="@+id/btnGS"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/msyh" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_normal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="民生银行"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

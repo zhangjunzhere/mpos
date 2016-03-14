@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+    android:layout_height="700dp"
+    android:background="@drawable/full_corner_area"
+    android:focusable="true"
+    android:padding="0dp"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:text="手动输入"
+            android:textSize="30sp"
+            android:textColor="@color/text_normal_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text="￥30.00"
+            android:id="@+id/textPrice"
+            android:textSize="30sp"
+            android:textColor="@color/solid_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divide"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/btnCut"
+            android:src="@drawable/product_count_cut_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="@color/text_normal_color"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/textCount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit"
+            android:layout_width="270dp"
+            android:layout_height="75dp" />
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/btnAdd"
+            android:src="@drawable/product_count_add_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:singleLine="true"
+        android:textColor="@color/text_normal_color"
+        android:id="@+id/textProductName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30sp"
+        android:textColorHint="@color/hint_color"
+        android:hint="请输入商品名称"
+        android:background="@drawable/edit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:background="@drawable/btn_white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/spinnerReduce"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"></Spinner>
+
+    <Button
+        android:layout_marginTop="230dp"
+        android:text="确定"
+        android:textColor="@color/solid_white"
+        android:textSize="40sp"
+        android:id="@+id/btnOK"
+        android:background="@drawable/btn_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

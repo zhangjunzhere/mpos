@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/itemBack"
+        android:layout_marginLeft="20px"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/back_cash"
+            android:id="@+id/back_tile" />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:paddingLeft="10px"
+            android:text="返回"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/back_tile" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/actionbar_select">
+
+        <ImageView
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/login_title"
+            android:id="@+id/login_title" />
+
+        <TextView
+            android:textColor="@color/blue_cc"
+            android:paddingLeft="10px"
+            android:id="@+id/titleTxt"
+            android:text=""
+            android:paddingRight="20px"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/login_title" />
+    </RelativeLayout>
+</RelativeLayout>

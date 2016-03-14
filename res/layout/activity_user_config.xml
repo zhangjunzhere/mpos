@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.itertk.app.mpos.config.UserConfigActivity">
+
+    <RelativeLayout
+        android:layout_width="750dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/relativeLayout2"
+        android:clickable="false">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/btnUser"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/user_tab_selector">
+
+            <ImageView
+                android:id="@+id/ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_tab_image_selector"
+                android:layout_gravity="center"
+                android:paddingTop="200dp" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店员管理"
+                android:textColor="@drawable/shop_config_text_selector"
+                android:textSize="30sp"
+                android:ems="1"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="340dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/btnCard"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_below="@id/btnUser"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:background="@drawable/user_tab_selector"-->
+        <!-->-->
+        <!--<ImageView-->
+        <!--android:id="@+id/ib2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/card_tab_image_selector"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:paddingTop="40dp"-->
+        <!--/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="银行卡绑定"-->
+        <!--android:textColor="@drawable/shop_config_text_selector"-->
+        <!--android:textSize="30sp"-->
+        <!--android:ems="1"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--/>-->
+        <!--</LinearLayout>-->
+
+        <FrameLayout
+            android:layout_marginLeft="1dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnUser"
+            android:id="@+id/list_container"
+            android:padding="0dp"
+            android:background="@drawable/full_min_corner"></FrameLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="450dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:id="@+id/itemArea"></RelativeLayout>
+
+</RelativeLayout>

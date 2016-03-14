@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/full_min_corner"
+    android:padding="0dp"
+    android:gravity="center_horizontal"
+    tools:context="com.itertk.app.mpos.trade.convenience.ChooseBankFragment">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:src="@drawable/divide_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="选择银行"
+            android:textColor="@color/text_normal_color"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/divide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:layout_width="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_white"
+        android:id="@+id/btnBank"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择银行"
+            android:textColor="@color/text_normal_color"
+            android:textSize="35sp"
+            android:id="@+id/textBank"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/textBankDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(建议选择工、农、中、建等银行)"
+            android:layout_below="@+id/textBank"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor= "@color/text_normal_color"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:text=">"
+            android:textColor="@color/text_normal_color"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="100dp"
+        android:layout_width="400dp"
+        android:background="@drawable/edit"
+        android:layout_below="@id/btnBank"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layoutSearch"
+        android:clickable="true"
+        android:gravity="center">
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/text_normal_color"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/textSearch"
+            android:background="@null"
+            android:hint="请输入关键字检索"
+            android:textColorHint="@color/hint_color"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/textSearch"
+            android:layout_alignBottom="@id/textSearch"
+            android:background="@drawable/btn_blue"
+            android:textColor="@color/solid_white"
+            android:textSize="30sp"
+            android:text="检索"
+            android:id="@+id/btnSearch" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_normal_color"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:id="@+id/textKHH"
+        android:background="@drawable/edit"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_marginTop="120dp"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/textSearch"
+        android:layout_alignBottom="@id/textSearch"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/solid_white"
+        android:textSize="30sp"
+        android:text="确定"
+        android:id="@+id/btnOK" />
+</LinearLayout>

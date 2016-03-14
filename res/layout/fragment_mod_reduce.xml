@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_corner_area">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_margin="15px"
+        android:background="@drawable/btn_blue"
+        android:text="保存优惠"
+        android:textColor="@color/solid_white"
+        android:textSize="35sp"
+        android:id="@+id/btnSave" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnSave"
+        android:layout_margin="15px"
+        android:hint="请输入优惠名称"
+        android:textSize="30dp"
+        android:id="@+id/textReduceName"
+        android:background="@drawable/edit" />
+
+    <RelativeLayout
+        android:background="@drawable/edit"
+        android:layout_width="fill_parent"
+        android:padding="0px"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_height="70px"
+        android:layout_below="@id/textReduceName">
+
+        <EditText
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/textReduceValue"
+            android:layout_margin="15px"
+            android:layout_alignParentLeft="true"
+            android:hint="请输入价格幅度"
+            android:textSize="30dp"
+            android:layout_toLeftOf="@+id/btnYuan"
+            android:background="@null"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnYuan"
+            android:layout_toLeftOf="@+id/btnPercent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="￥"
+            android:textSize="30dp"
+            android:background="@drawable/reduce_yuan_config_selector"
+            android:textColor="@drawable/shop_config_text_selector" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnPercent"
+            android:background="@drawable/reduce_percent_config_selector"
+            android:textSize="30dp"
+            android:text="%"
+            android:textColor="@drawable/shop_config_text_selector"
+            android:gravity="center" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

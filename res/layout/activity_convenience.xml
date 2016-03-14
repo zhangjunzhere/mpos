@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/main_backgroud"
+    tools:context="com.itertk.app.mpos.trade.convenience.ConvenienceActivity">
+
+<!--
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCreditcard"
+        android:src="@drawable/creditcard"
+        android:background="@null" />
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信用卡还款"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_below="@id/btnCreditcard"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/btnCreditcard"
+        android:layout_alignRight="@id/btnCreditcard" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTransfer"
+        android:layout_toRightOf="@id/btnCreditcard"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/transfer"
+        android:background="@null" />
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转账汇款"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_below="@id/btnTransfer"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/btnTransfer"
+        android:layout_alignRight="@id/btnTransfer" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAir"
+        android:layout_toRightOf="@id/btnTransfer"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/air"
+        android:background="@null" />
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机票预订"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_below="@id/btnAir"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/btnAir"
+        android:layout_alignRight="@id/btnAir" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTrain"
+        android:layout_toRightOf="@id/btnAir"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/railway"
+        android:background="@null" />
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="火车票"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_below="@id/btnTrain"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/btnTrain"
+        android:layout_alignRight="@id/btnTrain" />
+-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonelayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPhone"
+
+        android:background="@drawable/convience_phone_charge_selector" />
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机充值"
+        android:textSize="35sp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/btnPhone"
+      />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+
+        android:layout_toRightOf="@id/phonelayout"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBalance"
+
+
+        android:background="@drawable/search_product_selector" />
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额查询"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_below="@id/btnBalance"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/btnBalance"
+        android:layout_alignRight="@id/btnBalance" />
+
+  </RelativeLayout>
+    <!--
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贷款申请"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_below="@id/btnLoan"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@id/btnLoan"
+            android:layout_alignRight="@id/btnLoan" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnApply"
+            android:layout_below="@id/btnTransfer"
+            android:layout_alignLeft="@id/btnTrain"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/apply"
+            android:background="@null" />
+
+        <TextView
+            android:textColor="@color/text_normal_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信用卡申请"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_below="@id/btnApply"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@id/btnApply"
+            android:layout_alignRight="@id/btnApply" />
+            -->
+    </RelativeLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/full_corner_area"
+    android:orientation="vertical"
+    android:layout_width="450dp"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/hint_color"
+        android:hint="请输入该属性类别"
+        android:textSize="30sp"
+        android:id="@+id/textAttributeValueName"
+        android:background="@drawable/edit"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/textAttributeValuePrice"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/hint_color"
+        android:hint="请输入该类别价格"
+        android:textSize="30sp"
+        android:background="@drawable/edit"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:textColor="@color/solid_white"
+            android:textSize="30sp"
+            android:text="确定"
+            android:id="@+id/btnOK"
+            android:background="@drawable/btn_blue" />
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:textColor="@color/solid_white"
+            android:textSize="30sp"
+            android:text="取消"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/btn_green" />
+    </LinearLayout>
+</LinearLayout>

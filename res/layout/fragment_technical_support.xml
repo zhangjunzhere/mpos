@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".config.UpdateFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100dp"
+            android:text="旺铺宝"
+            android:textColor="@color/manu_input_color"
+            android:layout_marginBottom="80dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textProductAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品网址 ：www.lianyijia.com"
+                android:textSize="30sp"
+                android:textColor="@color/bar_normal_color"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/textUpdateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProductAddress"
+                android:text="客服电话 ：400-676-1616"
+                android:textSize="30sp"
+                android:textColor="@color/bar_normal_color"
+                android:layout_marginBottom="40dp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15px"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:textSize="60.0sp"
+        android:background="@drawable/manual_checkout_input"
+        android:textColor="@color/text_normal_color"
+        android:textColorHint="@color/text_normal_color"
+        android:gravity="right|center"
+        android:id="@+id/moneyInputView"
+        android:layout_marginLeft="15.0dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_alignParentTop="true"
+        android:text="￥0.00"
+        android:singleLine="true" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button1"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginTop="25px"
+        android:text="1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/moneyInputView" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button2"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:layout_marginLeft="15.0px"
+        android:text="2"
+        android:layout_toRightOf="@id/button1"
+        android:layout_alignBaseline="@id/button1"
+        android:layout_alignBottom="@id/button1" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button3"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:layout_marginLeft="15.0px"
+        android:text="3"
+        android:layout_toRightOf="@id/button2"
+        android:layout_alignBaseline="@id/button2"
+        android:layout_alignBottom="@id/button2" />
+
+    <ImageButton
+        android:textSize="48.0sp"
+        android:id="@+id/button4"
+        android:background="@drawable/calc_del_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:layout_marginLeft="15.0px"
+        android:layout_toRightOf="@id/button3"
+        android:layout_alignBottom="@id/button2" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button5"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:layout_marginTop="25px"
+        android:text="4"
+        android:layout_below="@id/button1"
+        android:layout_alignLeft="@id/button1" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button6"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:text="5"
+        android:layout_toLeftOf="@id/button3"
+        android:layout_alignBaseline="@id/button5"
+        android:layout_alignBottom="@id/button5" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button7"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:text="6"
+        android:layout_alignLeft="@id/button3"
+        android:layout_alignTop="@id/button6" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:id="@+id/button8"
+        android:textColor="@color/manu_input_color"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:text="C"
+        android:layout_height="100.0px"
+        android:layout_alignLeft="@id/button4"
+        android:layout_alignBottom="@id/button7" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button9"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:layout_marginTop="25px"
+        android:text="7"
+        android:layout_toLeftOf="@id/button2"
+        android:layout_below="@id/button5" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button10"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:text="8"
+        android:layout_alignBaseline="@id/button9"
+        android:layout_alignLeft="@id/button6"
+        android:layout_alignBottom="@id/button9" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button11"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:text="9"
+        android:layout_alignBaseline="@id/button10"
+        android:layout_alignLeft="@id/button7"
+        android:layout_alignBottom="@id/button10" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button13"
+        android:background="@drawable/calc_dot_selector"
+        android:paddingLeft="150px"
+        android:layout_width="165.0px"
+        android:layout_height="100.0dip"
+        android:layout_marginTop="30px"
+        android:text="."
+        android:layout_below="@id/button9"
+        android:layout_alignLeft="@id/button9"
+        android:layout_alignRight="@id/button10" />
+
+    <Button
+        android:textSize="48.0sp"
+        android:textColor="@color/manu_input_color"
+        android:id="@+id/button14"
+        android:background="@drawable/calc_item_selector"
+        android:layout_width="150px"
+        android:layout_height="100.0px"
+        android:text="0"
+        android:layout_toLeftOf="@id/button4"
+        android:layout_alignBaseline="@id/button13"
+        android:layout_alignBottom="@id/button13" />
+
+    <ImageButton
+        android:textSize="48.0sp"
+        android:id="@+id/button12"
+        android:background="@drawable/calc_plus_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button8"
+        android:layout_alignTop="@id/button11"
+        android:layout_alignBottom="@id/button14" />
+
+</RelativeLayout>

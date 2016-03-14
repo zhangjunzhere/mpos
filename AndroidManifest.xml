@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itertk.app.mpos"
+    android:versionCode="2015042401"
+    android:versionName="1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.hardware.usb.host" />
+    <!-- get camera information -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" > -->
+    <!-- </uses-permission> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name=".MPosApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.CustomActivityTheme" >
+        <activity
+            android:name=".map.BaiduMapChoiceAddressActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".login.ForgetPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_forget_password"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".login.RegisterActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".login.CertificateActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_certificate"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".login.BindBankCardActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bind_bank_card"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".config.ConfigHomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_config_home"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".config.SystemConfigActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_system_config"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".config.UserConfigActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_user_config"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".config.ProductConfigActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_product_config"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.TradeHomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_trade_home"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.pos.PosHomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_pos_home"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.pos.PosActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_pos"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.pos.BillActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bill"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.pos.PayActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bill"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.pos.PaySuccessActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bill"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/paysuccessstyle"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".login.TerminalActivateActivity"
+            android:label="@string/title_activity_activate"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".login.BindMerchantActivity"
+            android:label="@string/title_activity_bind_merchant"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.pos.CustomerSignActivity"
+            android:label="@string/title_activity_customer_sign"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.pos.BankcardOrderActivity"
+            android:label="@string/title_activity_bankcard_order"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+
+        <service
+            android:name=".service.OnlineService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".service.PreloadInfoService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".service.UploadOrderService"
+            android:exported="false" >
+        </service>
+        <activity
+            android:name=".login.BindMemberActivity"
+            android:label="@string/title_activity_bind_member"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".login.MemberActivateActivity"
+            android:label="@string/title_activity_member_activate"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.ConvenienceActivity"
+            android:label="@string/title_activity_convenience"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.AirTicketActivity"
+            android:label="@string/title_activity_air_ticket"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.TrainTicketActivity"
+            android:label="@string/title_activity_railway_ticket"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.CreditcardActivity"
+            android:label="@string/title_activity_creditcard"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.CreditcardPayActivity"
+            android:label="@string/title_activity_creditcard_pay"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.TransferActivity"
+            android:label="@string/title_activity_transfer"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.PhoneChargeActivity"
+            android:label="@string/title_activity_phone_charge"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.BalanceQueryActivity"
+            android:label="@string/title_activity_balance_query"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.BalanceResultActivity"
+            android:label="@string/title_activity_balance_result"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.PhoneChargePayActivity"
+            android:label="@string/title_activity_phone_chage_pay"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.TransferPayActivity"
+            android:label="@string/title_activity_transfer_pay"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.AirLineActivity"
+            android:label="@string/title_activity_air_line"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.TrainLineActivity"
+            android:label="@string/title_activity_train_line"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.taobao.TaobaoHomeActivity"
+            android:label="@string/title_activity_taobao_home"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.taobao.GoodsOrderActivity"
+            android:label="@string/title_activity_goods_order"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".trade.more.MoreHomeActivity"
+            android:label="@string/title_activity_more_home"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.TrainTicketOrderActivity"
+            android:label="@string/title_activity_train_ticket_order"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.AirTicketOrderActivity"
+            android:label="@string/title_activity_air_ticket_order"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.ConveniencePayActivity"
+            android:label="@string/title_activity_convenience_pay"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.LoanActivity"
+            android:label="@string/title_activity_loan"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.CreditcardApplyActivity"
+            android:label="@string/title_activity_creditcard_apply"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".account.AccountHomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:label="@string/title_activity_account_home" >
+        </activity>
+        <activity
+            android:name=".trade.convenience.ApplyContentActivity"
+            android:label="@string/title_activity_apply_content"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".account.SecurityActivity"
+            android:label="@string/title_activity_security"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".login.ModifyPasswordActivity"
+            android:label="@string/title_activity_modify_password"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trade.taobao.PayShopOrderActivity"
+            android:label="@string/title_activity_pay_shop_order"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name=".ExitActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            >
+            </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="RAkSVVqUDHWCABWvQoG98LEC" />
+
+        <activity
+            android:name=".login.TermInfoActivity"
+            android:label="@string/title_activity_term_info"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <!-- zyf add -->
+        <activity
+            android:name="com.itertk.app.mpos.trade.convenience.applycreditcard.BankChoiceActivity"
+            android:label="@string/title_activity_balance_query"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.itertk.app.mpos.trade.convenience.applycreditcard.ApplyCreditCardSubmit"
+            android:label="@string/title_activity_balance_query"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.itertk.app.mpos.trade.convenience.applycreditcard.ApplyCreditCardInfoDialog"
+            android:label="@string/title_activity_balance_query"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialog"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+
+        <receiver android:name="com.itertk.app.mpos.receiver.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

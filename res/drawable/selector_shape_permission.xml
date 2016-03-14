@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true">
+    <shape android:shape="oval" >
+        <solid android:color="@color/btn_orange" />
+        <gradient android:startColor="#FFFF0000" android:endColor="#80FF00FF"
+            android:angle="45"/>
+    </shape>
+</item>
+<item android:state_pressed="false" >
+    <shape android:shape="oval" >
+        <solid android:color="@color/transparent" />
+    </shape>
+</item>
+</selector>

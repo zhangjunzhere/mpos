@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_corner_area">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/edit"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="商品条码:"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:textColor="@color/hint_color"/>
+            <EditText
+                android:id="@+id/textBarcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入商品条形码"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:background="@null"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30dp"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/edit"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="商品名称:"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/hint_color"/>
+
+            <EditText
+                android:id="@+id/textProductName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btnSave"
+                android:background="@null"
+                android:layout_marginLeft="8dp"
+                android:hint="请输入商品名称"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30dp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tradePrice_area"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="批发价:"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/hint_color"/>
+            <EditText
+                android:id="@+id/textProductTradePrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textProductName"
+                android:background="@null"
+                android:hint="请输入商品批发价"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30dp"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/edit"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="零售价:"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:textColor="@color/hint_color"/>
+                <EditText
+                    android:id="@+id/textProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/textProductName"
+                    android:background="@null"
+                    android:hint="请输入商品零售价"
+                    android:layout_marginLeft="8dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="30dp"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnProductPic"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/textBarcode"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="0px">
+
+                <ImageView
+                    android:id="@+id/imageProduct"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/product_pic"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/cardNo2"
+                    android:gravity="center"
+                    android:text="上传商品图片"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnProductAttribute"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/btnProductPic"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="0px">
+
+                <ImageView
+                    android:id="@+id/cardNo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:src="@drawable/attr"
+
+                    />
+
+                <TextView
+                    android:id="@+id/btnYuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/cardNo2"
+                    android:gravity="center"
+                    android:text="添加商品属性"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/gridAttribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnProductAttribute"
+                android:numColumns="4"
+                android:visibility="gone"
+                android:verticalSpacing="5dp"></GridView>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/my_blue_selector"
+                android:text="修改商品"
+                android:textColor="#fff3f3f3"
+                android:textSize="35sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

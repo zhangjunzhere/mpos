@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="640dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bound_view"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center"
+    tools:context="com.itertk.app.mpos.login.ModifyPasswordActivity">
+
+    <ListView
+        android:id="@+id/picture_picker_list"
+        android:divider="@drawable/divide"
+        android:layout_below="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>

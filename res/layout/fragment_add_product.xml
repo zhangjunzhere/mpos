@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_corner_area"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/textBarcode"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bound_view"
+                android:hint="请输入商品条码"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30dp"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+            <EditText
+                android:id="@+id/textProductName"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/btnSave"
+                android:layout_margin="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bound_view"
+                android:hint="请输入商品名称"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/textProductPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/textProductName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bound_view"
+                android:hint="请输入商品价格"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30dp"
+                android:inputType="numberDecimal" />
+
+
+
+            <LinearLayout
+                android:id="@+id/btnProductPic"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/textBarcode"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/my_white_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="0px">
+
+                <ImageView
+                    android:id="@+id/imageProduct"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/product_pic"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/cardNo2"
+                    android:gravity="center"
+                    android:text="上传商品图片"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnProductAttribute"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:visibility="gone"
+
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="0px">
+
+                <ImageView
+                    android:id="@+id/cardNo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:src="@drawable/attr"
+
+                    />
+
+                <TextView
+                    android:id="@+id/btnYuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/cardNo2"
+                    android:gravity="center"
+                    android:text="添加商品属性"
+
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/gridAttribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnProductAttribute"
+                android:visibility="gone"
+                android:numColumns="4"
+                android:verticalSpacing="5dp"></GridView>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/my_blue_selector"
+                android:text="保存商品"
+                android:textColor="#fff3f3f3"
+                android:textSize="35sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

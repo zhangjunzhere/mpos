@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="solid_white">#ffffffff</color>
+    <color name="gray_color">#fff5f5f5</color>
+    <color name="solid_red">#ffff0000</color>
+    <color name="solid_blue">#ff0000ff</color>
+    <color name="solid_green">#ff6cb909</color>
+    <color name="solid_black">#000000</color>
+    <color name="black">#000000</color>
+    <color name="solid_yellow">#ffffff00</color>
+
+    <color name="artion_bar_color">#fff0f0f0</color>
+    <color name="text_normal_color">#ff818181</color>
+    <color name="clear_shop">#ffc4c4c4</color>
+    <color name="input_hint">#ffc7c7c7</color>
+    <color name="bar_normal_color">#ff666666</color>
+    <color name="manu_input_color">#ff686868</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ffe3e3e3</color>
+    <color name="listview_item_bg_nor">#fff5f5f5</color>
+    <color name="listview_item_bg_sel">#ff1ca9da</color>
+    <color name="blue_text">#ff32abd6</color>
+    <color name="blue_back">#ff1c96f4</color>
+    <color name="btn_back">#ffeaeaea</color>
+    <color name="blue_cc">#ff1c96f4</color>
+    <color name="orange">#fff6a650</color>
+    <color name="hint_color">#ffb3b3b3</color>
+    <color name="main_backgroud">#fff5f5f5</color>
+    <color name="second_backgroud">#fff9f9f9</color>
+
+    <color name="btn_blue">#1c96f4</color>
+    <color name="btn_blue_s">#1678c3</color>
+
+    <color name="btn_orange">#ff4401</color>
+    <color name="btn_orange_s">#cc3601</color>
+    <color name="border_gray"> #c0c0c0</color>
+
+    <color name="btn_yellow">#fcf204</color>
+    <color name="btn_yellow_s">#f4d501</color>
+
+
+
+    <!-- 暗宝石绿 -->
+    <color name="middleblue">#5f9cf9</color>
+
+    <!-- 蓟色 -->
+    <color name="lightgray">#eef2f5</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="divide">#c5c5c5</color>
+    <color name="indicator">#ff4303</color>
+
+    <color name="dialog_content_normal">#7a7a7a</color>
+
+
+</resources>

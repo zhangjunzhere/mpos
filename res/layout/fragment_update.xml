@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".config.UpdateFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100dp"
+            android:text="旺铺宝"
+            android:textColor="@color/manu_input_color"
+            android:layout_marginBottom="80dp" />
+
+        <TextView
+            android:id="@+id/textVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前软件版本：0.8"
+            android:textSize="30sp"
+            android:textColor="@color/bar_normal_color"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/textUpdateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次更新时间：2014-07-07 11：11"
+            android:textSize="30sp"
+            android:textColor="@color/bar_normal_color"
+            android:layout_marginBottom="40dp" />
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue"
+            android:gravity="center_vertical"
+            android:id="@+id/btnCheckUpdate">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/update_2"
+                android:id="@+id/imgRefresh"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="130dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检查更新"
+                android:textSize="30dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textColor="@color/solid_white"
+                android:layout_alignBottom="@+id/imgRefresh"
+                android:layout_toRightOf="@+id/imgRefresh" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

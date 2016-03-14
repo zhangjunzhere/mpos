@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMLPIItem"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/selector_white_middleblue_bg"
+
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/ivMLISelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/poi_selected"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ivMLISelected"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvMLIPoiName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/selector_black_white_textcolor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMLIPoiAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/selector_grey_white_textcolor"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

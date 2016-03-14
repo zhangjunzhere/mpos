@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="100px"
+    android:layout_width="fill_parent"
+    android:minHeight="100px"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_height="85dp"
+        android:layout_width="80dp"
+        android:id="@+id/ItemImage"
+        android:layout_marginLeft="23dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:minWidth="50px"></ImageView>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="已售出0件"
+        android:textSize="30sp"
+        android:textColor="@color/text_normal_color"
+        android:id="@+id/textSaleCount"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11111111"
+        android:textSize="25dp"
+        android:textColor="@color/text_normal_color"
+        android:id="@+id/ItemText"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/textSaleCount"
+        android:layout_alignLeft="@+id/ItemImage"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11111111"
+        android:textSize="25dp"
+        android:textColor="@color/text_normal_color"
+        android:id="@+id/textPrice"
+        android:layout_below="@+id/ItemText"
+        android:layout_alignLeft="@+id/ItemText"></TextView>
+
+</RelativeLayout>

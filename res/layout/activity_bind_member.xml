@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.itertk.app.mpos.login.BindMemberActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/full_corner_area"
+        android:layout_width="700dp"
+        android:padding="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/solid_red"
+            android:text="终端设备读取成功！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textTerminal"
+            android:layout_gravity="center"
+            android:textColor="@color/text_normal_color"
+            android:textSize="30sp"
+            android:text="终端设备编号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="698dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/divide" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="友情提示设备绑定规则："
+            android:textColor="@color/solid_red"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="1、一个会员帐号可以绑定多个终端设备；"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="2、一个终端设备只能被一个会员帐号绑定；"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="3、已被绑定的终端设备必须解除绑定才能被再次绑定；"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnBind"
+        android:layout_width="700dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/my_blue_selector"
+        android:text="绑定商户"
+        android:textColor="#ffffffff"
+        android:textSize="30sp" />
+
+</LinearLayout>
